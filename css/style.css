@@ -6046,26 +6046,45 @@ span.pills-status {
     line-height: 15px;
     font-family: 'Circular-Medium';
 }
-span.pills-status.report {
+span.pills-status-flat {
+    display: inline-block;
+    padding: 4px 8px;
+    padding-top: 6px;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Circular-Medium';
+}
+span.pills-status.report,
+span.pills-status-flat.report {
     background: #EDF3F5;
     color: #4D4D4D;
 }
-span.pills-status.revisi {
+span.pills-status.revisi,
+span.pills-status-flat.revisi {
     background: #FFEED8;
     color: #C86100;
 }
-span.pills-status.accept {
+span.pills-status.accept,
+span.pills-status-flat.accept {
     background: #D8F3D9;
     color: #006603;
 }
-span.pills-status.final {
+span.pills-status.final,
+span.pills-status-flat.final {
     background: #D6F1F4;
     color: #005E68;
 }
-span.pills-status.verified {
+span.pills-status.verified,
+span.pills-status-flat.verified {
     background: #ECDDFF;
     color: #4C2083;
 }
+span.pills-status.rejected,
+span.pills-status-flat.rejected {
+    background: #FEF4F6;
+    color: #F0506E;
+}
+
 .table-nasional-aksi .right {
     position: relative;
     top: 45px;
@@ -6097,6 +6116,9 @@ span.pills-status.verified {
     font-size: 13px;
     font-weight: 400;
     margin-right: 5px;
+}
+.table-program-capaian-rpjmn .table-content .custom-table tr.hidden {
+    display: none;
 }
 .rows.table-nasional-aksi {
     padding: 0 40px;

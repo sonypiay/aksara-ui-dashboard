@@ -4182,6 +4182,73 @@ a.logo-aksara:hover .tooltip-aksara {
     visibility:visible;
     transition: all 0.5s ease;
 }
+.tooltip-add-note {
+    position: relative;
+    display: inline-block;
+}
+  /* Tooltip text */
+.tooltip-add-note .tooltip-content {
+    visibility: hidden;
+    width: 300px;
+    background-color: #151515;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 4px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 140%;
+    left: 10%;
+    margin-left: -16.5rem;
+  
+    /* Fade in tooltip */
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.tooltip-add-note .tooltip-content .form-area {
+    width: 100%;
+}
+.tooltip-add-note .tooltip-content .form-area textarea {
+    color: #dddddd;
+    padding: 13px 16px;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 100%;
+    line-height: 18px;
+    resize: none;
+    height: 50px;
+}
+
+.tooltip-add-note .tooltip-content .form-area textarea:focus {
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.tooltip-add-note .tooltip-content .form-area textarea::placeholder {
+    color: #888888;
+}
+
+/* Tooltip arrow */
+.tooltip-add-note .tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #151515 transparent transparent transparent;
+}
+.tooltip-add-note:hover .tooltip-content {
+   visibility: visible;
+   opacity: 1;
+}
+
 .xbullet:before {
     content: '';
     width: 11px;
@@ -4895,6 +4962,21 @@ button.btn-first-form {
     border: 1px solid #0D5CAB;
 }
 button.btn-first-form:disabled {
+    background: #CCCCCC;
+    color: #999999;
+    border-color: #CCCCCC;
+}
+button.btn-tooltip-submit {
+    background: #0D5CAB;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 18px;
+    outline: none;
+    padding: 8px 24px;
+    border: 1px solid #0D5CAB;
+}
+button.btn-tooltip-submit:disabled {
     background: #CCCCCC;
     color: #999999;
     border-color: #CCCCCC;
@@ -6045,6 +6127,9 @@ span.pills-status {
     font-size: 12px;
     line-height: 15px;
     font-family: 'Circular-Medium';
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 span.pills-status-flat {
     display: inline-block;
@@ -6053,36 +6138,50 @@ span.pills-status-flat {
     font-size: 12px;
     line-height: 15px;
     font-family: 'Circular-Medium';
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
-span.pills-status.report,
-span.pills-status-flat.report {
+span.pills-status.report {
     background: #EDF3F5;
     color: #4D4D4D;
 }
-span.pills-status.revisi,
-span.pills-status-flat.revisi {
+span.pills-status.revisi {
     background: #FFEED8;
     color: #C86100;
 }
-span.pills-status.accept,
-span.pills-status-flat.accept {
+span.pills-status.accept {
     background: #D8F3D9;
     color: #006603;
 }
-span.pills-status.final,
-span.pills-status-flat.final {
+span.pills-status.final {
     background: #D6F1F4;
     color: #005E68;
 }
-span.pills-status.verified,
-span.pills-status-flat.verified {
+span.pills-status.verified {
     background: #ECDDFF;
     color: #4C2083;
 }
-span.pills-status.rejected,
-span.pills-status-flat.rejected {
-    background: #FEF4F6;
-    color: #F0506E;
+
+span.pills-status-flat.primary {
+    background: #D8EAFC;
+    color: #666666;
+    border: 1px solid #1E8CF2;
+}
+span.pills-status-flat.success {
+    background: rgba(60, 186, 57, 0.12);
+    color: #666666;
+    border: 1px solid #3CBA39;
+}
+span.pills-status-flat.warning {
+    background: #FFF9E4;
+    color: #666666;
+    border: 1px solid #FFEBA4;
+}
+span.pills-status-flat.danger {
+    background: #FFE9E4;
+    color: #666666;
+    border: 1px solid #FFAFA4;
 }
 
 .table-nasional-aksi .right {
@@ -6112,10 +6211,11 @@ span.pills-status-flat.rejected {
     font-family: Circular-Bold;
     font-weight: 400;
 }
-.table-program-capaian-rpjmn .table-content .custom-table tr td a.icon-action {
-    font-size: 13px;
+.table-program-capaian-rpjmn .table-content .custom-table tr td .icon-action {
+    font-size: 18px;
     font-weight: 400;
     margin-right: 5px;
+    color: #4A85C0 !important;
 }
 .table-program-capaian-rpjmn .table-content .custom-table tr.hidden {
     display: none;
@@ -6131,6 +6231,17 @@ span.pills-status-flat.rejected {
     position: relative;
     border: 0;
     float: right;
+}
+.status-alert-message {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.status-alert-success {
+    color: #3CBA39;
+}
+.status-alert-error {
+    color: #E74424;
 }
 .status-pelaporan {
     width: 100%;

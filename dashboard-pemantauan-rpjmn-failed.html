@@ -181,96 +181,21 @@
                     <div class="right-content">
                         <div class="right btn-aksi-laporan">
                             <span class="btn-white-secondary"><a href="#">Riwayat Perubahan</a></span>
-                            <span class="btn-blue-main"><a href="#"><span class="las la-edit"></span> Laporan Capaian</a></span>
+                            <span class="btn-blue-main"><a href="#">Selesai Melaporkan</a></span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="rows dashboard-pementauan-content status-mitigasi">
                 <div class="table-program-capaian-rpjmn">
-                    <h2>RPJMN Program Prioritas (PP)</h2>
-                    <div class="table-content">
-                        <table id="table-pp" class="custom-table display" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Kode PN</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Kode PP</th>
-                                    <th class="text-center no-sort" width="250" rowspan="2">Nomenklatur</th>
-                                    <th class="text-center no-sort" width="180" rowspan="2">Indikator</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Satuan</th>
-                                    <th class="text-center no-sort" width="30" colspan="2">Target 2020</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Capaian</th>
-                                    <th class="text-center no-sort" width="30" colspan="2">Kinerja</th>
-                                    <th class="text-center no-sort" width="50" rowspan="2">Penanggung Jawab</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Keterangan</th>
-                                </tr>
-                                <tr>
-                                    <th width="40" class="text-center no-sort">RPJMN</th>
-                                    <th width="40" class="text-center no-sort">RKP</th>
-                                    <th width="40" class="text-center no-sort">RPJMN</th>
-                                    <th width="40" class="text-center no-sort">RKP</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>06</td>
-                                    <td>03</td>
-                                    <td>
-                                        <a href="javascript:void(0);" class="link" onclick="onToggleTableProgram('pp06')">
-                                            <span class="icon-pp06">
-                                                <i class="las la-caret-right"></i>
-                                            </span>
-                                            Pembangunan Rendah Karbon
-                                        </a>
-                                    </td>
-                                    <td>
-                                        Persentase penurunan emisi GRK terhadap baseline pada sektor energi
-                                    </td>
-                                    <td>Persen</td>
-                                    <td>11.8</td>
-                                    <td>11.8</td>
-                                    <td><span class="pills-status-flat warning">8.2</span></</td>
-                                    <td>74.2%</td>
-                                    <td>74.2%</td>
-                                    <td>Sistem</td>
-                                    <td class="text-center">
-                                        <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="tr-pp06 hidden">
-                                    <td>06</td>
-                                    <td>03</td>
-                                    <td></td>
-                                    <td>
-                                        Persentase penurunan emisi GRK terhadap baseline pada sektor energi
-                                    </td>
-                                    <td>Persen</td>
-                                    <td>11.8</td>
-                                    <td>11.8</td>
-                                    <td><span class="pills-status-flat primary">8.2</span></</td>
-                                    <td>74.2%</td>
-                                    <td>74.2%</td>
-                                    <td>Sistem</td>
-                                    <td class="text-center">
-                                        <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
-                                        <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/comment-outline.png" />
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="rows">
+                        <div class="left">
+                            <h2>RPJMN Kegiatan Prioritas (KP)</h2>
+                        </div>
+                        <div class="right" style="margin-right: 40px;">
+                            <span class="status-alert-message status-alert-success"><i class="las la-check"></i> Berhasil Menyimpan Data</span>
+                        </div>
                     </div>
-                </div>
-                <div class="table-program-capaian-rpjmn">
-                    <h2>RPJMN Kegiatan Prioritas (KP)</h2>
                     <div class="table-content">
                         <table id="table-kp" class="custom-table display" style="width:100%">
                             <thead>
@@ -300,7 +225,7 @@
                                     <td>
                                         <a href="javascript:void(0);" class="link" onclick="onToggleTableProgram('kp03');">
                                             <span class="icon-kp03">
-                                                <i class="las la-caret-right"></i>
+                                                <i class="las la-caret-down"></i>
                                             </span>
                                             Pembangunan Energi Berkelanjutan
                                         </a>
@@ -317,14 +242,24 @@
                                     <td>Dit. SDEMP, Dit. KTI</td>
                                     <td class="text-center">
                                         <!-- <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
+                                            <img src="icon/upload.png" />
                                         </a> -->
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a>
+                                        <div class="tooltip-add-note">
+                                            <a class="icon-action" href="javascript:void(0)">
+                                                <img src="icon/comment-plus.png" />
+                                            </a>
+                                            <div class="tooltip-content">
+                                                <div class="form-area">
+                                                    <textarea placeholder="Tulis keterangan disini"></textarea>
+                                                </div>
+                                                <div class="right">
+                                                    <button class="btn-tooltip-submit">Simpan</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
-                                <tr class="tr-kp03 hidden">
+                                <tr class="tr-kp03">
                                     <td>03</td>
                                     <td>01</td>
                                     <td></td>
@@ -340,14 +275,24 @@
                                     <td>Dit. SDEMP, Dit. KTI</td>
                                     <td class="text-center">
                                         <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
+                                            <img src="icon/upload.png" />
                                         </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a>
+                                        <div class="tooltip-add-note">
+                                            <a class="icon-action" href="javascript:void(0)">
+                                                <img src="icon/comment-plus.png" />
+                                            </a>
+                                            <div class="tooltip-content">
+                                                <div class="form-area">
+                                                    <textarea placeholder="Tulis keterangan disini"></textarea>
+                                                </div>
+                                                <div class="right">
+                                                    <button class="btn-tooltip-submit">Simpan</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
-                                <tr class="tr-kp03 hidden">
+                                <tr class="tr-kp03">
                                     <td>03</td>
                                     <td>01</td>
                                     <td></td>
@@ -362,250 +307,55 @@
                                     <td>74.2%</td>
                                     <td>Dit. SDEMP, Dit. KTI</td>
                                     <td class="text-center">
-                                        <!-- <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
                                         <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/comment-outline.png" />
-                                        </a> -->
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="table-program-capaian-rpjmn">
-                    <h2>RPJMN Proyek Prioritas (ProPN)</h2>
-                    <div class="table-content">
-                        <table id="table-propn" class="custom-table display" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Kode PN</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Kode ProPN</th>
-                                    <th class="text-center no-sort" width="250" rowspan="2">Nomenklatur</th>
-                                    <th class="text-center no-sort" width="180" rowspan="2">Indikator</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Satuan</th>
-                                    <th class="text-center no-sort" width="30" colspan="2">Target 2020</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Capaian</th>
-                                    <th class="text-center no-sort" width="30" colspan="2">Kinerja</th>
-                                    <th class="text-center no-sort" width="50" rowspan="2">Penanggung Jawab</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Keterangan</th>
-                                </tr>
-                                <tr>
-                                    <th width="40" class="text-center no-sort">RPJMN</th>
-                                    <th width="40" class="text-center no-sort">RKP</th>
-                                    <th width="40" class="text-center no-sort">RPJMN</th>
-                                    <th width="40" class="text-center no-sort">RKP</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>03</td>
-                                    <td>01</td>
-                                    <td>
-                                        <a href="javascript:void(0);" class="link" onclick="onToggleTableProgram('propn03');">
-                                            <span class="icon-propn03">
-                                                <i class="las la-caret-right"></i>
-                                            </span>
-                                            Pengelolaan Energi Baru Terbarukan
+                                            <img src="icon/upload.png" />
                                         </a>
-                                    </td>
-                                    <td>
-                                        Kapasitas tambahan terpasang pembangkit EBT
-                                    </td>
-                                    <td>MV</td>
-                                    <td>686.5</td>
-                                    <td>686.5</td>
-                                    <td><span class="pills-status-flat primary">473.4</span></</td>
-                                    <td>74.2%</td>
-                                    <td>74.2%</td>
-                                    <td>Dit. SDEMP, Dit. KTI</td>
-                                    <td class="text-center">
-                                        <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a>
+                                        <div class="tooltip-add-note">
+                                            <a class="icon-action" href="javascript:void(0)">
+                                                <img src="icon/comment-plus.png" />
+                                            </a>
+                                            <div class="tooltip-content">
+                                                <div class="form-area">
+                                                    <textarea placeholder="Tulis keterangan disini"></textarea>
+                                                </div>
+                                                <div class="right">
+                                                    <button class="btn-tooltip-submit">Simpan</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
-
-                                <tr class="tr-propn03 hidden">
+                                <tr class="tr-kp03">
                                     <td>03</td>
                                     <td>01</td>
                                     <td></td>
                                     <td>
-                                        Pemanfaatan biofuel untuk Domestik
+                                        Penurunan Intensitas Energi Final
                                     </td>
-                                    <td>Juta Kilo Liter</td>
-                                    <td>10.0</td>
-                                    <td>10.0</td>
+                                    <td>SBM/R Miliar</td>
+                                    <td>0.90</td>
+                                    <td>0.90</td>
                                     <td><span class="pills-status-flat warning">8.2</span></</td>
-                                    <td>66.76%</td>
-                                    <td>66.76%</td>
-                                    <td>Dit. SDEMP, Dit. KTI</td>
-                                    <td class="text-center">
-                                        <!-- <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a> -->
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>03</td>
-                                    <td>01</td>
-                                    <td>
-                                        <a href="javascript:void(0);" class="link">
-                                            Efisiensi dan Konservasi Energi
-                                        </a>
-                                    </td>
-                                    <td>
-                                        Peningkatan Implementasi SKEM
-                                    </td>
-                                    <td>Peralatan</td>
-                                    <td>3</td>
-                                    <td>3</td>
-                                    <td><span class="pills-status-flat danger">2</span></</td>
-                                    <td>66.76%</td>
-                                    <td>66.76%</td>
-                                    <td>Dit. SDEMP, Dit. KTI</td>
-                                    <td class="text-center">
-                                        <!-- <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a> -->
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="table-program-capaian-rpjmn">
-                    <h2>RPJMN Proyek K/L</h2>
-                    <div class="table-content">
-                        <table id="table-proyekkl" class="custom-table display" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th class="text-center no-sort" width="250" rowspan="2">Nomenklatur</th>
-                                    <th class="text-center no-sort" width="180" rowspan="2">Indikator</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Satuan</th>
-                                    <th class="text-center no-sort" width="30" colspan="2">Target 2020</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Capaian</th>
-                                    <th class="text-center no-sort" width="30" colspan="2">Kinerja</th>
-                                    <th class="text-center no-sort" width="50" rowspan="2">Penanggung Jawab</th>
-                                    <th class="text-center no-sort" width="30" rowspan="2">Keterangan</th>
-                                </tr>
-                                <tr>
-                                    <th width="40" class="text-center no-sort">RPJMN</th>
-                                    <th width="40" class="text-center no-sort">RKP</th>
-                                    <th width="40" class="text-center no-sort">RPJMN</th>
-                                    <th width="40" class="text-center no-sort">RKP</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <a href="javascript:void(0)" class="link">
-                                            PLTA
-                                        </a>
-                                    </td>
-                                    <td>
-                                        Kapasitas terpasang tambahan
-                                    </td>
-                                    <td>MV</td>
-                                    <td>165.2</td>
-                                    <td>165.2</td>
-                                    <td><span class="pills-status-flat success">8.2</span></</td>
                                     <td>74.2%</td>
                                     <td>74.2%</td>
                                     <td>Dit. SDEMP, Dit. KTI</td>
                                     <td class="text-center">
                                         <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
+                                            <img src="icon/upload.png" />
                                         </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="javascript:void(0)" class="link">
-                                            PLT Panas Bumi (PLTP)
-                                        </a>
-                                    </td>
-                                    <td>
-                                        Kapasitas terpasang tambahan
-                                    </td>
-                                    <td>MV</td>
-                                    <td>165.2</td>
-                                    <td>165.2</td>
-                                    <td><span class="pills-status-flat warning">8.2</span></</td>
-                                    <td>74.2%</td>
-                                    <td>74.2%</td>
-                                    <td>Dit. SDEMP, Dit. KTI</td>
-                                    <td class="text-center">
-                                        <!-- <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a> -->
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="javascript:void(0)" class="link">
-                                            PLTA
-                                        </a>
-                                    </td>
-                                    <td>
-                                        Kapasitas terpasang tambahan
-                                    </td>
-                                    <td>MV</td>
-                                    <td>165.2</td>
-                                    <td>165.2</td>
-                                    <td><span class="pills-status-flat primary">8.2</span></</td>
-                                    <td>74.2%</td>
-                                    <td>74.2%</td>
-                                    <td>Dit. SDEMP, Dit. KTI</td>
-                                    <td class="text-center">
-                                        <!-- <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a> -->
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="javascript:void(0)" class="link">
-                                            PLTA
-                                        </a>
-                                    </td>
-                                    <td>
-                                        Kapasitas terpasang tambahan
-                                    </td>
-                                    <td>MV</td>
-                                    <td>165.2</td>
-                                    <td>165.2</td>
-                                    <td><span class="pills-status-flat danger">8.2</span></</td>
-                                    <td>74.2%</td>
-                                    <td>74.2%</td>
-                                    <td>Dit. SDEMP, Dit. KTI</td>
-                                    <td class="text-center">
-                                        <!-- <a class="icon-action" href="javascript:void(0)">
-                                            <img src="icon/file.png" />
-                                        </a>
-                                        <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
-                                            <img src="icon/comment-outline.png" />
-                                        </a> -->
+                                        <div class="tooltip-add-note">
+                                            <a class="icon-action" href="javascript:void(0)">
+                                                <img src="icon/comment-plus.png" />
+                                            </a>
+                                            <div class="tooltip-content">
+                                                <div class="form-area">
+                                                    <textarea placeholder="Tulis keterangan disini"></textarea>
+                                                </div>
+                                                <div class="right">
+                                                    <button class="btn-tooltip-submit">Simpan</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>

@@ -24,6 +24,84 @@
         <h3>JAWA BARAT</h3>
         <p>40.000 MTon CO2eq</p>
     </div>
+
+    <!-- Modal Riwayat Perubahan -->
+    <div class="modal fade" id="modalRiwayatPerubahan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Riwayat Perubahan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="las la-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table-modal">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Capaian</th>
+                                <th>Tanggal Diubah</th>
+                                <th>Dokumen</th>
+                                <th>Diubah Oleh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>8.2</td>
+                                <td>30 November 2020 15:30 WIB</td>
+                                <td>
+                                    <a class="btn-download" href="javascript:void(0);">
+                                        <span class="las la-download"></span> Unduh Dokumen
+                                    </a>
+                                </td>
+                                <td>Leon S. Kennedy</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>8.2</td>
+                                <td>30 November 2020 15:30 WIB</td>
+                                <td>
+                                    <a class="btn-download" href="javascript:void(0);">
+                                        <span class="las la-download"></span> Unduh Dokumen
+                                    </a>
+                                </td>
+                                <td>Leon S. Kennedy</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>8.2</td>
+                                <td>30 November 2020 15:30 WIB</td>
+                                <td>
+                                    <a class="btn-download" href="javascript:void(0);">
+                                        <span class="las la-download"></span> Unduh Dokumen
+                                    </a>
+                                </td>
+                                <td>Leon S. Kennedy</td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>8.2</td>
+                                <td>30 November 2020 15:30 WIB</td>
+                                <td>
+                                    <a class="btn-download" href="javascript:void(0);">
+                                        <span class="las la-download"></span> Unduh Dokumen
+                                    </a>
+                                </td>
+                                <td>Leon S. Kennedy</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Riwayat Perubahan -->
+
     <div class="wrapper">
         <div class="header-admin">
             <div class="header">
@@ -180,7 +258,7 @@
                     </div>
                     <div class="right-content">
                         <div class="right btn-aksi-laporan">
-                            <span class="btn-white-secondary"><a href="#">Riwayat Perubahan</a></span>
+                            <!-- <span class="btn-white-secondary"><a href="#">Riwayat Perubahan</a></span> -->
                             <span class="btn-blue-main"><a href="#"><span class="las la-edit"></span> Laporan Capaian</a></span>
                         </div>
                     </div>
@@ -254,6 +332,9 @@
                                         <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
                                             <img src="icon/comment-outline.png" />
                                         </a>
+                                        <a class="icon-action" href="javascript:void(0)" onclick="onShowHistoryChange();" data-toggle="tooltip" data-placement="top" title="Riwayat Perubahan">
+                                            <img src="icon/file.png" />
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr class="tr-pp06 hidden">
@@ -276,6 +357,9 @@
                                         </a>
                                         <a class="icon-action" href="javascript:void(0)">
                                             <img src="icon/comment-outline.png" />
+                                        </a>
+                                        <a class="icon-action" href="javascript:void(0)" onclick="onShowHistoryChange();" data-toggle="tooltip" data-placement="top" title="Riwayat Perubahan">
+                                            <img src="icon/file.png" />
                                         </a>
                                     </td>
                                 </tr>
@@ -350,6 +434,9 @@
                                         <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
                                             <img src="icon/comment-outline.png" />
                                         </a>
+                                        <a class="icon-action" href="javascript:void(0)" onclick="onShowHistoryChange();" data-toggle="tooltip" data-placement="top" title="Riwayat Perubahan">
+                                            <img src="icon/file.png" />
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr class="tr-kp03 hidden">
@@ -372,6 +459,9 @@
                                         </a>
                                         <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
                                             <img src="icon/comment-outline.png" />
+                                        </a>
+                                        <a class="icon-action" href="javascript:void(0)" onclick="onShowHistoryChange();" data-toggle="tooltip" data-placement="top" title="Riwayat Perubahan">
+                                            <img src="icon/file.png" />
                                         </a>
                                     </td>
                                 </tr>
@@ -468,6 +558,9 @@
                                         </a>
                                         <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
                                             <img src="icon/comment-outline.png" />
+                                        </a>
+                                        <a class="icon-action" href="javascript:void(0)" onclick="onShowHistoryChange();" data-toggle="tooltip" data-placement="top" title="Riwayat Perubahan">
+                                            <img src="icon/file.png" />
                                         </a>
                                     </td>
                                 </tr>
@@ -586,6 +679,9 @@
                                         </a>
                                         <a class="icon-action" href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Masih dalam progress tahun berjalan">
                                             <img src="icon/comment-outline.png" />
+                                        </a>
+                                        <a class="icon-action" href="javascript:void(0)" onclick="onShowHistoryChange();" data-toggle="tooltip" data-placement="top" title="Riwayat Perubahan">
+                                            <img src="icon/file.png" />
                                         </a>
                                     </td>
                                 </tr>
@@ -735,6 +831,14 @@
 
         $('[data-toggle="tooltip"]').tooltip();
     });
+
+    function onShowHistoryChange()
+    {
+        $("#modalRiwayatPerubahan").modal({
+            focus: true,
+            keyboard: true
+        });
+    }
 
     function onToggleTableProgram(id)
     {

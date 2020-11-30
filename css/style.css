@@ -5507,11 +5507,33 @@ table.custom-table.dataTable thead th {
     background: #F9F9F9;
     border: 1px solid #EAEAEA;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 14px;
     font-weight: normal;
     font-family: Circular-Medium;
-    padding: 22px 16px;
+    padding: 5px 16px;
     position: relative;
+}
+table.custom-table.dataTable thead th .dropdown .btn-dropdown {
+    color: #000000;
+}
+table.custom-table.dataTable thead th .dropdown .dropdown-content {
+    border-radius: 4px;
+    border: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 0 1px 4px #dddddd;
+}
+table.custom-table.dataTable thead th .dropdown .dropdown-content a.dropdown-item {
+    padding: 10px 15px;
+}
+table.custom-table.dataTable thead th .dropdown .dropdown-content a.dropdown-item > .active {
+    color: #205CAB;
+}
+table.custom-table.dataTable thead th .dropdown .dropdown-content a.dropdown-item:hover,
+table.custom-table.dataTable thead th .dropdown .dropdown-content a.dropdown-item:focus {
+    background: #dddddd;
+    color: #000000;
 }
 .table-tab-wrapper.nav-tabs .nav-item {
     width: 25%;
@@ -5545,6 +5567,9 @@ table.custom-table.dataTable tbody td {
     font-size: 12px;
     line-height: 15px;
     color: #666666;
+}
+table.custom-table.dataTable tbody tr:hover {
+    background: #f9f9f9 !important;
 }
 .table-dashboard-perencanaan .tab-content {
     padding: 0;

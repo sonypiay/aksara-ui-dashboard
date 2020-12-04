@@ -6270,6 +6270,10 @@ span.pills-status-flat.danger {
     margin-right: 0;
     color: #4A85C0 !important;
 }
+.table-program-capaian-rpjmn .table-content .custom-table tr td .icon-action img {
+    width: 16px;
+    height: 16px;
+}
 .table-program-capaian-rpjmn .table-content .custom-table tr td .icon-action .icon {
     font-size: 19px;
 }
